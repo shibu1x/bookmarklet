@@ -5,7 +5,7 @@ javascript:(function(){
     url.searchParams.set('hl', 'en');
     url.searchParams.set('gl', 'us');
     window.location.href = url.toString();
-  } else if (window.location.hostname === 'www.amazon.co.jp' && window.location.pathname === '/s') {
+  } else if (window.location.hostname === 'www.amazon.co.jp' && window.location.pathname.endsWith('/s')) {
     url.searchParams.set('emi', 'AN1VRQENFRJN5');
     window.location.href = url.toString();
   }
